@@ -1,0 +1,38 @@
+server:
+  port: 8000
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+logging:
+  level:
+    root: debug
+    org:
+      hibernate:
+        SQL: DEBUG
+
+spring:
+  datasource:
+      driver-class-name: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5432/demodb
+      username: demo
+      password: demo
+  devtools:
+    livereload:
+      enabled: true
+  freemarker:
+    cache: false
+  jpa:
+    show_sql: true
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: none
+        format_sql: true
+
+#??? DB ????
+
+
+
